@@ -64,7 +64,7 @@
         <div :class="{'hidden': !mobileNavOpen}" class="hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-xs z-50">
           <div x-on:click.prevent="mobileNavOpen = !mobileNavOpen" class="fixed inset-0 bg-black opacity-20"></div>
           <nav class="relative p-8 w-full h-full bg-[#0E1111] overflow-y-auto" style="background-color: #0E1111;">
-              <div class="absolute top-0 right-0 w-full h-full bg-no-repeat bg-top bg-cover" style="background-image: url('img/tiger11.png'); opacity: 0.01;"></div>
+              <div class="absolute top-0 right-0 w-full h-full bg-no-repeat bg-top bg-cover" style="background-image: url('img/tiger13.png');"></div>
               <div class="relative z-10 flex items-center justify-between">
                   <a href="#" class="inline-block">
                       <img class="h-20" src="logot/bar-tiger_logo_NEGA.png" alt="">
@@ -135,20 +135,24 @@
 <!--Eka sectio-->
 <section class="max-w-[1300px] mx-auto -mt-20 z-10 px-4">
     <div class="grid grid-cols-1 md:grid-cols-2 rounded-xl overflow-hidden">
-      <div class="bg-gradient-to-br from-[#FF7400] to-[#FFC100] z-10 order-1 md:order-1 flex items-center justify-center text-center rounded-t-xl md:rounded-t-none md:rounded-tl-xl">
-        <div class="m-24">
-            <h1 class="z-10 text-5xl font-bold mb-3">Varaukset</h1>
-            <h2 class="z-10 text-2xl font-semibold mb-5">Haluatko varata pöydän?</h2>
-            <a href="#Yhteydenotto" class="rounded-full bg-black px-5 py-3 h-14 hover:bg-gray-900 focus:ring-4 focus:ring-gray-200 inline-flex items-center justify-center gap-2 transition duration-200">
-                <span class="text-lg font-semibold tracking-tight text-white">Ota yhteyttä</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
-                    <path d="M14 6.66666H7.33333C4.38781 6.66666 2 9.05447 2 12V13.3333M14 6.66666L10 10.6667M14 6.66666L10 2.66666" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-            </a>
+      <div class="relative bg-gradient-to-br from-[#FF7400] to-[#FFC100]">
+        <div class="absolute top-2 left-2">
+            <img src="img/tiger12.png" alt="Image" class="w-1/4">
+        </div>
+        <div class="z-10 order-1 md:order-1 flex items-center justify-center text-center rounded-t-xl md:rounded-t-none md:rounded-tl-xl">
+            <div class="m-24">
+                <h1 class="z-10 text-5xl font-bold mb-3">Varaukset</h1>
+                <h2 class="z-10 text-2xl font-semibold mb-5">Haluatko varata pöydän?</h2>
+                <a href="#Yhteydenotto" class="rounded-full bg-black px-5 py-3 h-14 hover:bg-gray-900 focus:ring-4 focus:ring-gray-200 inline-flex items-center justify-center gap-2 transition duration-200">
+                    <span class="text-lg font-semibold tracking-tight text-white">Ota yhteyttä</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                        <path d="M14 6.66666H7.33333C4.38781 6.66666 2 9.05447 2 12V13.3333M14 6.66666L10 10.6667M14 6.66666L10 2.66666" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
     
-
         <div class="z-10 order-2 md:order-2  md:rounded-t-none md:rounded-r-xl">
             <img src="img/karaokehuone.jpeg" alt="" class="w-full h-[390px] object-cover max-h-[390px]">
         </div>
@@ -181,7 +185,7 @@
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0"></script>
-
+<!--Palvelut sectio-->
 <section class="px-4 my-20 bg-[#0E1111] relative overflow-hidden" id="Palvelut">
   <div class="absolute top-20 right-0 transform translate-x-1/2">
     <img class="w-2/3" src="img/tiger.png" alt="Top Right Image">
